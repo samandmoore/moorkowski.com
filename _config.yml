@@ -1,0 +1,18 @@
+title: "The Moorkowskis"
+email: hello@moorkowski.com
+description: >
+  This is the homepage of the Moorkowskis.
+baseurl: ""
+url: "https://moorkowski.com"
+
+markdown: kramdown
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin
+  - Rakefile
+
+destination: _site
