@@ -55,32 +55,14 @@
 
   .Header-frame {
     font-family: var(--title-font-family);
-    margin: 10px auto;
-    width: clamp(200px, 250px, 300px);
+    margin: 20px auto;
+    width: clamp(300px, 350px, 400px);
     height: min-content;
 
     .Header-title {
-      display: grid;
-      grid-template-areas:
-      'top right'
-      'bottom right';
       color: var(--brand-color);
       line-height: 1;
-
-      .sam {
-        display: block;
-        grid-area: top;
-        text-align: left;
-        align-self: start;
-        line-height: 0.9em;
-      }
-      .moore {
-        align-self: start;
-        display: block;
-        grid-area: bottom;
-        text-align: left;
-        line-height: 0.9em;
-      }
+      text-align: center;
     }
 
     .Header-subtitle {
@@ -134,7 +116,29 @@
 
 .Facts {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+
+  .Facts-image {
+    figure {
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+      max-width: 350px;
+      margin: auto;
+    }
+
+    img {
+      aspect-ratio: auto;
+    }
+
+    figcaption {
+      background-color: #000;
+      color: white;
+      font-size: 0.8rem;
+      padding: 3px;
+      text-align: center;
+    }
+  }
 }
 
 .Footer {
